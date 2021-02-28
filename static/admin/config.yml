@@ -1,5 +1,6 @@
 backend:
-  name: test-repo
+  name: github
+  repo: beki-g/gatsby-netify-blog
   
 media_folder: static/assets
 public_folder: assets
