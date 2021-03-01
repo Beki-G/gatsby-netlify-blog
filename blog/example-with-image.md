@@ -1,5 +1,5 @@
 ---
-path: blog/img-example
+path: /blog/img-example
 date: 2021-03-01T05:30:20.467Z
 title: 'Example with image? '
 ---
