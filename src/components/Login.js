@@ -12,10 +12,7 @@ const config = {
   authParams: {
     pkce: true,
     responseType: ["token", "id_token"],
-  },
-  features: {
-    registration: true,
-  },
+  } 
 }
 
 export const signIn = typeof window !== "undefined" && new OktaSignIn(config)
