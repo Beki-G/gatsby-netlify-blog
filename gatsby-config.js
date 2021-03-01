@@ -1,3 +1,10 @@
+// const activeEnv = process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || "development"
+
+// require("dotenv").config({
+//   path: `.env.${activeEnv}`,
+// })
+require('dotenv').config();
+
 module.exports = {
   plugins: [
     `gatsby-plugin-netlify-cms`,
@@ -8,6 +15,6 @@ module.exports = {
         name: `markdown-pages`,
       },
     },
-    `gatsby-transformer-remark`
-  ]
+    `gatsby-transformer-remark`,
+  ],
 }
