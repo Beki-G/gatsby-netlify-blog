@@ -3,7 +3,7 @@ backend:
   repo: beki-g/gatsby-netlify-blog
   branch: main
   
-media_folder: static/assets
+media_folder: /static/assets
 public_folder: assets
   
 collections:
@@ -16,3 +16,4 @@ collections:
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
+      

@@ -7,7 +7,7 @@ export const TinyLetterSignUp = () => {
       action="https://tinyletter.com/beki-g"
       method="post"
       target="popupwindow"
-      onsubmit="window.open('https://tinyletter.com/beki-g', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
+      onSubmit="window.open('https://tinyletter.com/beki-g', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
     >
       <p>
         <label htmlFor="tlemail">Enter your email address</label>

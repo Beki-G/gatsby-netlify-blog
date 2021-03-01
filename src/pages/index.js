@@ -1,16 +1,15 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
+import Navbar from "../components/Navbar"
 
 export default () => {
   return (
-    <>
-      Hello world!
+    <div>
+      <Navbar />
+
       <p>
-        <Link to="/blog">View Blog</Link>
+        {/* <Link to="/account">My Account</Link> */}
       </p>
-      <p>
-        <Link to="/account">My Account</Link>
-      </p>
-    </>
+    </div>
   )
 }

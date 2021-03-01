@@ -39,9 +39,9 @@ const BlogRoll = ({ data }) => {
                 </Link>
               </p>
             </article>
-            <TinyLetterSignUp />
           </div>
         ))}
+      <TinyLetterSignUp />
     </div>
   )
 }

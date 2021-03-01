@@ -1,7 +1,8 @@
-const path = require(`path`)
+const path = require(`path`);
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
+  // fmImagesToRelative(actions)
 
   const blogPostTemplate = path.resolve(`src/templates/blog.js`)
 
@@ -29,6 +30,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   }
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+
     createPage({
       path: node.frontmatter.path,
       component: blogPostTemplate,
