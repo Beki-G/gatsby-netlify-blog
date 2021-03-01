@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: beki-g/gatsby-netify-blog
+  repo: beki-g/gatsby-netlify-blog
   
 media_folder: static/assets
 public_folder: assets
