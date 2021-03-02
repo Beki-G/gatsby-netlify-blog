@@ -1,13 +1,18 @@
 import React from "react"
 
 export const TinyLetterSignUp = () => {
+  const onSubmit= (e) =>{
+    window.open('https://tinyletter.com/beki-g', 'popupwindow', 'scrollbars=yes,width=800,height=600');
+    return true;
+  }
+
   return (
     <form
       style={{ border: "1px solid #ccc", padding: "3px", textAlign: "center" }}
       action="https://tinyletter.com/beki-g"
       method="post"
       target="popupwindow"
-      onSubmit="window.open('https://tinyletter.com/beki-g', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
+      onSubmit={onSubmit}
     >
       <p>
         <label htmlFor="tlemail">Enter your email address</label>

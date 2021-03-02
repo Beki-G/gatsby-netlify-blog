@@ -10,7 +10,7 @@ const BlogRoll = ({ data }) => {
     <div className="columns is-multiline">
       {posts &&
         posts.map(({ node: post }) => (
-          <div className="is-parent column is-6" key={post.id}>
+          <div className="is-parent column is-6 mb-6" key={post.id}>
             <article
               className={`blog-list-item tile is-child box notification ${
                 post.frontmatter.featuredpost ? "is-featured" : ""
@@ -19,7 +19,7 @@ const BlogRoll = ({ data }) => {
               <header>
                 <p className="post-meta">
                   <Link
-                    className="title has-text-primary is-size-4"
+                    className="title has-text-primary is-size-4 font-medium text-base"
                     to={post.frontmatter.path}
                   >
                     {post.frontmatter.title}
@@ -30,14 +30,11 @@ const BlogRoll = ({ data }) => {
                   </span>
                 </p>
               </header>
-              <p>
-                {post.excerpt}
-                <br />
-                <br />
-                <Link className="button" to={post.frontmatter.path}>
-                  Keep Reading →
-                </Link>
-              </p>
+              <p className="mb-2">{post.excerpt}</p>
+
+              <Link className="button mt-2" to={post.frontmatter.path}>
+                Keep Reading →
+              </Link>
             </article>
           </div>
         ))}

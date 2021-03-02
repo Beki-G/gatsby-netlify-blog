@@ -1,5 +1,10 @@
 @tailwind base;
 @tailwind components;
+
+.blog-post-content img{
+  @apply mx-auto;
+}
+
 @tailwind utilities;
 
 

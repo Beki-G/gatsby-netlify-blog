@@ -12,10 +12,10 @@ export default function Template({
   return (
     <div>
       <Navbar />
-      <div className="blog-post-container">
+      <div className="blog-post-container w-3/5 mx-auto">
         <div className="blog-post">
           <h1 className="text-3xl text-center">{frontmatter.title}</h1>
-          <h2 className="text-xl text-center">{frontmatter.date}</h2>
+          <h2 className="text-xl text-center mb-6">{frontmatter.date}</h2>
           <div
             className="blog-post-content"
             dangerouslySetInnerHTML={{ __html: html }}
