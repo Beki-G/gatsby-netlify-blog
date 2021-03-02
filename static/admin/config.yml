@@ -5,6 +5,17 @@ backend:
   
 media_folder: /static/assets
 public_folder: assets
+media_library: 
+  name: cloudinary
+  config: 
+    default_transformations:
+      - - fetch_format: auto
+          quality: auto
+        - width: 300
+          crop: fill
+    cloud_name: skyphyre
+    api_key: 929881451546241
+
   
 collections:
   - name: blog
