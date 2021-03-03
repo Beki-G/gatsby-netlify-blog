@@ -10,9 +10,6 @@ const Navbar = () => {
     if(url.includes("blog") || url.includes("projects")) setNavBg({bg:"transparent"})
     else setNavBg({bg:"white"})
 
-    return () => {
-      setNavBg({bg: "transparent"})
-    }
   }, [])
 
   return (

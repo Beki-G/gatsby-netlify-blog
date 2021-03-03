@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="flex flex-col mt-10">
+    <footer className="flex flex-col mt-10 bg-lgCyan">
       <div className=" flex justify-center items-center border-t-2 bg-eagleGreen text-aquamarine">
         Check me out on social media! &#160;
         <span className="bg-aquamarine hover:text-slateGray">

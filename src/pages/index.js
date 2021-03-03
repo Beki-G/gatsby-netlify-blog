@@ -8,15 +8,12 @@ import Profile from "../components/Profile.js"
 
 export default () => {
   return (
-    <div>
+    <div className="bg-lgCyan">
 
       <Hero />
       <Profile />
       <CardGrid />
       <Footer />
-      <p>
-        {/* <Link to="/account">My Account</Link> */}
-      </p>
     </div>
   )
 }
